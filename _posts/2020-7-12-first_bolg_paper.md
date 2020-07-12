@@ -3,7 +3,7 @@ layout: post
 title: "我的第一个博文"
 date: 2020-7-12 
 description: "Jekyll"
-tags: [博客, jekyll_learning]
+tags: jekyll_learning
 ---   
 
 去年学过jekyll构建博客的，但是现在已经忘记了好多，查看之前的笔记，却发现有些不全，因为之前换过一台电脑，存储在电脑上的东西有所丢失。

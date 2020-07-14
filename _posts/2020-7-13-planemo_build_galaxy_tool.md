@@ -6,7 +6,7 @@ description: "planemo, galaxy tool"
 tags: ['planemo', 'galaxy', 'galaxy tool']
 ---  
 # Planemo workflow
-<img src="/images/posts/2020_7_20_planemo_build_galaxy/1.png" height="auto" width="80%">  
+<img src="/images/posts/2020_7_20_planemo_build_galaxy/4.png" height="auto" width="80%">  
 
 # `planemo tool_init`命令
 创建xml文件的基本骨架

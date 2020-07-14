@@ -7,6 +7,8 @@ tags: ['python']
 ---  
 
 # 卸载centos自带的python2.7
+（其实多少有些不建议的，比如说yum这个安装软件的工具，默认使用的就是python2.7版本的。把python2.7卸载后，yum就无法使用了。）
+
 使用以下的代码卸载centos7中自带的python2.7：
 
 ```

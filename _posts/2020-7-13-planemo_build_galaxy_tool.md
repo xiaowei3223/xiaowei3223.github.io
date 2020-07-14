@@ -135,3 +135,5 @@ planemo serve
 planemo test
 ```
 
+参考： 
+  [Building Galaxy Tools](https://crs4.github.io/Galaxy4Developers/lectures/08.building_galaxy_tools/)

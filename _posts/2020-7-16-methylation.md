@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "甲基化相关内容学习"
-date: 2020-7-14 
+date: 2020-7-16 
 description: "甲基化学习"
 tags: ['甲基化']
 ---  

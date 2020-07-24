@@ -17,6 +17,15 @@ whereis python |xargs rm -frv  #删除残余文件
 whereis python #验证删除
 ```
 
+# yum install python3.6
+```
+# centos7
+# 换成阿里云的yum源
+yum -y install epel-release
+yum repolist
+yum -y install python36
+```
+
 # 安装python3.6.4
 
 Step1: 在CentOS上按如下命令下载：

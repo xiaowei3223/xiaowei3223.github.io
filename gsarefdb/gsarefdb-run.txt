@@ -1,6 +1,0 @@
-##############################################################################
-# Copy and paste the following code to R in order to run GSARefDB:
-##############################################################################
-
-library(shiny)
-shiny::runGitHub('gsarefdb', 'gsa-central')

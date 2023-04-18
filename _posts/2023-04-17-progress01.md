@@ -8,7 +8,7 @@ tags: 并行运行
 ## threading和multiprocessing的区别
 
 
-threading和multiprocessing都是Python中的模块，用于实现多线程和多进程编程。
+threading、multiprocessing和concurrent都是Python中用于实现并发编程的标准库。
 
 主要区别在于：
 
@@ -16,7 +16,9 @@ threading和multiprocessing都是Python中的模块，用于实现多线程和�
 
 2、multiprocessing实现的是多进程编程，每个进程都有自己独立的内存空间，因此进程间的通信和数据共享需要通过特定的方式来实现。但是由于每个进程都有独立的解释器和全局解释器锁，所以可以完全发挥多核CPU的优势。
 
-总的来说，如果需要执行I/O密集型任务，使用threading可以获得比较好的性能表现，而如果需要执行CPU密集型任务，使用multiprocessing会更加高效。
+3、concurrent库是Python3.2版本中新增加的，主要用于编写异步代码，可以支持协程和线程池。在Python3.4版本之后，asyncio库也被加入到标准库中，提供了更加强大的异步编程能力。
+
+总的来说，threading适用于I/O密集型任务，multiprocessing适用于CPU密集型任务，而concurrent和asyncio则是用于实现异步编程的库。
 
 
 ## 多线程和多进程的区别
@@ -34,3 +36,10 @@ threading和multiprocessing都是Python中的模块，用于实现多线程和�
 
 总的来说，多线程适合I/O密集型任务，因为它们可以更好地利用CPU资源，而多进程则适合CPU密集型任务，因为它们可以在多个CPU上并行执行，从而提高计算速度。但是，由于多线程存在一些线程安全的问题，因此在实现并发计算时需要考虑线程安全问题，如共享资源的同步和互斥。
 
+
+## 异步编程
+异步编程是一种编程模型，可以让代码在等待某个操作完成的同时，继续执行其它任务，而不是像传统的同步编程模型那样，必须等待操作完成后才能执行下一步。
+
+在异步编程中，当一个任务需要等待另一个任务完成时，会将等待操作交给事件循环（event loop）处理，然后继续执行下一步任务。事件循环会负责调度所有任务，将它们按照特定的算法合理地分配在不同的线程或进程上，从而提高代码的运行效率和并发性能。
+
+异步编程通常使用协程（coroutine）或异步函数（async function）来实现。在Python中，使用asyncio模块提供的事件循环和协程机制，可以很方便地进行异步编程。
